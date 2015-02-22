@@ -1,3 +1,17 @@
+"""This Module implements various functions that is used to Manage the swiss style Tournamnets.
+
+This module contains various functions which helps in managing the data related to conducting a swiss style tounaments.
+The backend Database Management system is postgress.
+Below are the list functions available:
+    connect: Returns a connection object for a postgress SQL datbase instance.
+    deleteMatches: Remove all the match records from the database
+    deletePlayers: Remove all the player records from the database
+    countPlayers: Returns the number of players currently registered
+    registerPlayer: Adds a player to the tournament database.
+    playerStandings: Returns a list of the players and their win records, sorted by wins.
+    reportMatch: Records the outcome of a single match between two players.
+    swissPairings: Returns a list of pairs of players for the next round of a match.
+"""
 #!/usr/bin/env python
 # 
 # tournament.py -- implementation of a Swiss-system tournament
